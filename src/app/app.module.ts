@@ -8,21 +8,18 @@ import { CardComponent } from './components/card/card.component';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { CardLabelComponent } from './components/card/card-label/card-label.component';
 import { CardPricingComponent } from './components/card/card-pricing/card-pricing.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    CardComponent,
-    MenuBarComponent,
-    CardLabelComponent,
-    CardPricingComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		CardComponent,
+		MenuBarComponent,
+		CardLabelComponent,
+		CardPricingComponent,
+	],
+	imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
